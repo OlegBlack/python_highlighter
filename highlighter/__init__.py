@@ -42,7 +42,7 @@ def create_app():
         @:param text - string text to be processed
         @:return marked text, e.g., "sample text <mark>highlighted part</mark> rest of the text"."""
 
-        result = re.sub(re.compile(expr), markup_text(expr), text)
+        result = text.replace(expr, markup_text(expr))
 
         return result
 
