@@ -4,7 +4,6 @@ date: 12.12.2012
 author smith@example.com
 license: MIT"""
 
-import re
 from flask import Flask, render_template, request, Markup
 
 
