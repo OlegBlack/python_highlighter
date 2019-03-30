@@ -41,9 +41,8 @@ def create_app():
         """Markup searched string in given text.
         @:param text - string text to be processed
         @:return marked text, e.g., "sample text <mark>highlighted part</mark> rest of the text"."""
-        result = text
-
-        # TODO: add an implementation
+        
+        result = text.replace(expr, markup_text(expr))
 
         return result
 
